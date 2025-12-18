@@ -1,1 +1,1 @@
-# packplango
+PackPlango is a web-based platform where users can create their own custom packages and compare different packages to choose the best option. It focuses on flexibility, simplicity, and a user-friendly experience.
