@@ -1,0 +1,176 @@
+/* 🌍 Main Container */
+.explore-container {
+  padding: 10px 100px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🏷️ Title Section */
+.explore-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background: #fff;
+}
+
+/* 🧳 Grid Layout */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* 🏖️ Card Styles */
+.explore-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  transition: transform 0.3s ease;
+  height: 340px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.explore-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 📸 Image */
+.explore-card-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+/* 💫 Info Box */
+.explore-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 9px;
+  text-align: left;
+  border-radius: 0 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.explore-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ✨ Top Info Section */
+.explore-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🏷️ Title + Country */
+.explore-destination-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.explore-country-text {
+  font-size: 14px;
+  color: #6c6c6c;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* 💰 Price (to the right side) */
+.explore-price {
+  color: #000000;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ⭐ Rating Section */
+.explore-rating {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.explore-rating-badge {
+  background-color: #1e66f5;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 20px 0px 20px 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.explore-outof {
+  margin-left: 3px;
+  color: #ddd;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.explore-reviews {
+  color: #000000;
+  margin-left: 5px;
+}
+
+/* 💤 No Data */
+.explore-no-data {
+  font-size: 18px;
+  color: #666;
+  grid-column: span 4;
+  padding: 50px 0;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1200px) {
+  .explore-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .explore-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .explore-destination-title {
+    font-size: 20px;
+  }
+
+  .explore-country-text {
+    font-size: 14px;
+  }
+
+  .explore-price {
+    font-size: 17px;
+  }
+}

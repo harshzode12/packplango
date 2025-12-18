@@ -1,0 +1,60 @@
+.discover-container {
+  padding: 40px 100px 100px ;
+  font-family: Roboto;
+}
+
+.discover-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a2540;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  display: block;            /* change from inline-block */
+  width: fit-content;
+  margin: 0 auto 20px;       /* centers it horizontally */
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.discover-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.discover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.discover-overlay h3 {
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}

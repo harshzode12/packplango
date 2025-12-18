@@ -1,0 +1,165 @@
+/* Background full screen with uploaded image */
+.calendar-page {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: url("../assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #333;
+}
+
+/* Badge */
+.calendar-badge {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a0a23;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #4c6ef5, #e0a7fc, #ffffff) border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 70px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/* Headings */
+.calendar-heading {
+ font-size: 70px; /* bigger for desktop */
+  font-weight: 900;
+  color: #000000;
+  line-height: 1;
+  position: relative;
+  top: -60px;
+}
+
+.calendar-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  margin-top: -80px;
+}
+
+/* Calendar layout */
+.calendars-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 110px;   /* was 100px */
+  margin-bottom: 44px; /* was 40px */
+  margin-top: 55px;    /* was 50px */
+}
+
+.month-container {
+  width: 264px;   /* was 240px */
+}
+
+.month-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;   /* was 1em */
+  margin-bottom: 17px; /* was 15px */
+  color: #000000;
+}
+
+.month-header .arrow {
+  font-size: 1.32em;   /* was 1.2em */
+  cursor: pointer;
+  color: #999;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3.3px;   /* was 3px */
+}
+
+.day-name {
+  font-weight: 500;
+  color: #999;
+  font-size: 0.88em;   /* was 0.8em */
+}
+
+.day-cell {
+  height: 35.2px;   /* was 32px */
+  width: 35.2px;    /* was 32px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.99em;   /* was 0.9em */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.day-cell.empty {
+  visibility: hidden;
+}
+
+.day-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.day-cell.selected {
+  border: 2.2px solid #e74c3c;   /* was 2px */
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.day-cell.today {
+  border: 1.1px solid #3498db;   /* was 1px */
+  color: #3498db;
+}
+
+
+/* Buttons */
+.dont-know-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.next-button {
+ background: linear-gradient(90deg, #c471ed, #f64f59);
+  border: none;
+  padding: 12px 50px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  top: -20px;
+}
+
+.skip-button {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  color: #444;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s ease;
+  position: relative;
+  top: -40px;
+}
+
+.skip-button:hover {
+  background-color: #f0f0f0;
+}

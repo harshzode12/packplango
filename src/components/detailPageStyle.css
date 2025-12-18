@@ -1,0 +1,649 @@
+.detailPage-container {
+  font-family: "Poppins", sans-serif;
+  color: #000; /* black text */
+  background-color: #ffffff; /* white background */
+  padding: 40px;
+}
+
+.detailPage-subtitle {
+  color: #0f294d;
+  font-size: 32px;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background: #fff;
+  width: 300px;
+  position : relative;
+  text-align: center;
+  left: 558px;
+  bottom: 20px;
+}
+
+.detailPage-title {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 700;
+  color: #232323;
+  position : relative;
+  bottom: 40px;
+}
+
+/* === 🏖️ Banner Container === */
+.detailPage-banner {
+  position: relative;
+  margin: 30px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 1000px;
+  height: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: none;
+  border: none;
+}
+
+/* === 🖼️ Banner Image === */
+.detailPage-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative; /* keep this relative so text overlays properly */
+  z-index: 1;
+  filter: brightness(85%); /* slightly darker for readable text */
+}
+
+/* === ✨ Banner Text Container === */
+.detailPage-banner-text {
+  position: absolute;
+  bottom: 25px;
+  left: 35px;
+  color: #fff;
+  z-index: 2; /* make sure text is on top of the image */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* 🏔️ Title (e.g., Kedarnath) */
+.banner-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* 🗓️ Info Container (Days + Location) */
+.banner-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 📅 Days text */
+.banner-days {
+  color: #f4f4f4;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* 📍 Location text */
+.banner-location {
+  color: #ffd6e7;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Separator dot */
+.banner-separator {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.detailPage-itinerary-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f3a2d;
+  margin-bottom: 8px;
+  display: inline-block;
+  position: relative;
+  text-decoration: underline; 
+  bottom: 70px;
+  /* ❌ remove text-decoration here */
+}
+
+.detailPage-itinerary-title::after {
+  display: block;
+  width: 50px;               /* underline length */
+  height: 2px;               /* underline thickness */
+  background-color: #1f3a2d; /* underline color */
+  margin-top: 4px;           /* space between text & underline */
+}
+
+
+/* Layout */
+.detailPage-main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detailPage-itinerary {
+  flex: 2;
+}
+
+/* Day buttons */
+.detailPage-day-buttons {
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 40px;
+}
+
+.detailPage-day-btn {
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000;
+  margin-right: 8px;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.detailPage-day-btn:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.detailPage-day-btn.active {
+  background: #000000;
+  color: #fff;
+}
+
+/* Day section */
+.detailPage-day-section h3 {
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+/* Places */
+.detailPage-place-card {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.detailPage-place-card:hover {
+  transform: scale(1.02);
+}
+
+.detailPage-place-card img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.detailPage-place-info {
+  padding: 10px;
+  color: #000;
+}
+
+/* Sidebar */
+.detailPage-sidebar {
+  flex: 1;
+}
+
+.detailPage-price-box {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 25px 20px;
+  text-align: center;
+  color: #000;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔥 Discount line */
+.old-price {
+  margin: 0;
+  font-size: 20px;
+  color: #777;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 6px;
+  position: relative;
+}
+
+.strike {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: #999999;
+  position: relative;
+  right: 20px;
+}
+
+.discount-text {
+  color: #ff4d4d !important; /* Force it to be red ❤️ */
+  font-weight: 600;
+  position: relative;
+  right: 20px;
+}
+
+/* 💰 Main price */
+.detailPage-price-box h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  margin: 5px 0;
+  position: relative;
+  right: 115px;
+}
+
+.detailPage-price-box h2 span {
+  font-size: 16px;
+  color: #555;
+  font-weight: 400;
+}
+
+/* 🧾 Subtitle */
+.detailPage-price-box p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+  position: relative;
+  right: 105px;
+}
+
+/* ✨ Button */
+.detailPage-pay-btn {
+ background: linear-gradient(to right, #8a04ff, #5b9aff);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 80%;
+  transition: transform 0.2s ease;
+  position: relative;
+  bottom: px;
+}
+
+.detailPage-pay-btn:hover {
+  background: linear-gradient(90deg, #5271ff 0%, #3a54e0 100%);
+  transform: translateY(-2px);
+}
+
+/* 💸 Coupons & Offers Container */
+.detailPage-coupon-box {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  color: #333;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.detailPage-coupon-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.detailPage-coupon-text {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.detailPage-coupon-box a,
+.detailPage-coupon-box .enter-code-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.detailPage-coupon-box a:hover {
+  text-decoration: underline;
+}
+
+/* ✨ Coupon Cards */
+.detailPage-coupon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px 18px;
+  margin-bottom: 14px;
+  transition: all 0.3s ease;
+}
+
+.detailPage-coupon-item.applied {
+  background: linear-gradient(90deg, #e9f1ff 0%, #f6f9ff 100%);
+  border: 1.5px solid #b8d5ff;
+}
+
+.detailPage-coupon-item:hover {
+  transform: translateY(-2px);
+}
+
+/* 💰 Coupon Info Text */
+.detailPage-coupon-item div {
+  flex: 1;
+}
+
+.detailPage-coupon-item b {
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  bottom: 9px;
+  left: 15px;
+}
+
+.coupon-icon-img {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  bottom: 16px;
+}
+
+.detailPage-coupon-item p {
+  margin: 2px 0 0 0;
+  font-size: 10px;
+  color: #555;
+}
+
+/* 💸 Discount Amount */
+.detailPage-coupon-amount {
+  font-weight: 600;
+  font-size: 15px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* ✅ Buttons */
+.detailPage-apply-btn,
+.detailPage-remove-btn {
+  border: none;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.detailPage-apply-btn {
+  color: #007bff;
+}
+
+.detailPage-apply-btn:hover {
+  color: #0056d1;
+}
+
+.detailPage-remove-btn {
+  color: #ff4d4d;
+}
+
+.detailPage-remove-btn:hover {
+  color: #e63e3e;
+}
+
+/* 🧾 Compare Packages Box */
+.compare-packages-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  max-width: 400px;
+  position: relative;
+  left: 20px;
+}
+
+.compare-packages-box:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.compare-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;   /* ✅ removed the gray box */
+  border-radius: 10px;
+  padding: 0;                /* ✅ remove extra space */
+  margin-right: 15px;
+}
+
+.compare-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: transparent;   /* ✅ ensure image background is transparent */
+}
+
+.compare-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.compare-text p {
+  font-size: 16px;
+  color: #555;
+  margin: 2px 0 0 0;
+}
+
+
+.itinerary-timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 40px;
+  overflow: visible;
+  max-height: none;
+}
+
+.day-section.open .itinerary-timeline {
+  max-height: 2000px;
+  padding: 20px 0 20px 40px;
+}
+
+.itinerary-timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.itinerary-icon {
+  position: absolute;
+  left: -5px;
+  border: 3px solid #e384fd;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #e384fd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.day-section {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #123c22;
+}
+
+.day-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.arrow-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Timeline (renamed for no conflict) */
+.itinerary-timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.itinerary-timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.itinerary-icon {
+  position: absolute;
+  left: -5px;
+  border: 3px solid #e384fd;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #e384fd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Day Button Group */
+.day-button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 40px;
+}
+
+.day-btn {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day-btn.active {
+  background-color: black;
+  color: white;
+}
+
+/* Accordion Day Header */
+.day-section {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 5px;
+  width: 700px;
+  cursor: pointer;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #123c22;
+}
+
+.day-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.arrow-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Timeline */
+.itinerary-timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.itinerary-timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px
+}

@@ -1,0 +1,156 @@
+/* Background with uploaded image */
+.month-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("../assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribute top to bottom */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* prevent scroll */
+}
+
+/* Badge */
+.month-badge {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a0a23;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #4c6ef5, #e5b5fd, #faf0f6) border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: inline-block;
+  top: 35px;
+  position: relative;
+}
+
+/* Heading */
+.month-heading {
+  font-size: 70px;
+  font-weight: 900;
+  color: #000000;
+  line-height: 1.2;
+  margin: 10px 0;
+  position: relative;
+  top: 20px;
+}
+
+/* Subtitle */
+.month-subtitle {
+  font-size: 20px;
+  color: #636262;
+  margin: 10px 0 20px;
+  position: relative;
+  top: -10px;
+}
+
+/* Months Grid */
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  gap: 15px;
+  margin: 20px 0;
+  position: relative;
+  top: -30px;
+}
+
+.month-btn {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 2px solid #d29bff;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.month-btn:hover {
+  background: #d29bff;
+  color: white;
+  border-color: #b312fc;
+  transform: scale(1.05);       /* slight zoom on hover */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15); /* glowing effect */
+}
+
+.month-btn.active {
+  background: #d29bff;
+  color: white;
+  border-color: #d29bff;
+}
+
+.month-btn:hover {
+  opacity: 0.85;
+}
+
+/* Days Counter */
+.days-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  top: -50px;
+}
+
+.days-counter button {
+  border: none;
+  background: #e29bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.days-counter button:hover {
+  background: #b312fc;
+}
+
+.days-value {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Enter exact dates link */
+.enter-dates {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  text-decoration: underline;
+  position: relative;
+  top: -70px;
+}
+
+/* Next Button */
+.month-next-btn {
+ background: linear-gradient(90deg, #c471ed, #f64f59);
+  border: none;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+  position: relative;
+  top: -90px;
+}
+
+.month-next-btn:hover {
+  opacity: 0.85;
+}

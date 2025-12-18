@@ -1,0 +1,148 @@
+/* Base Body Styles */
+.transportation-body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f9f5ff, #fbeaff);
+}
+
+/* TransportAI Page Container */
+.transportAI-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("../assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+.transportAI-header {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a0a23;
+  padding: 12px 36px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #4c6ef5, #e5b5fd, #faf0f6) border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin: 30px 0;
+  display: inline-block;
+}
+
+/* Main Title */
+.transportAI-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000;
+  margin: 15px 0;
+}
+
+/* Subtitle */
+.transportAI-subtitle {
+  color: #777;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Trip Options / Cards */
+.transportAI-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.transportAI-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 180px;
+}
+
+.transportAI-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.transportAI-active {
+  border-color: #E384FD;
+  background: linear-gradient(145deg, #e6d3f2, #d1c1e6);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.transportAI-icon {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.transportAI-active .transportAI-icon {
+  color: white;
+}
+
+.transportAI-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.transportAI-active .transportAI-name {
+  color: white;
+}
+
+/* Custom Option Link */
+.transportAI-custom-option {
+  color: #555;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+}
+
+/* Next Button */
+.transportAI-next-btn {
+  background: linear-gradient(90deg, #c471ed, #f64f59);
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+.transportAI-next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.transportAI-next-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,159 @@
+/* Background with uploaded image */
+.editor-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("../assets/background.png") no-repeat center center fixed;
+  background-size: cover; /* fills entire screen */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  align-items: center;     /* horizontally center content */
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Badge */
+.badge {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a0a23;
+  padding: 12px 36px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #4c6ef5, #e5b5fd, #faf0f6) border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 200px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/* Main heading */
+.main-heading {
+  font-size: 80px; /* bigger for desktop */
+  font-weight: 900;
+  color: #000000;
+  line-height: 1;
+  position: relative;
+  top: -60px;
+
+}
+
+/* First line spacing */
+.first-line {
+  margin-bottom: 20px; /* separates first and second line */
+}
+
+/* Highlighted AI text */
+.highlight {
+  color: #b312fc;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+/* Gradient text magic */
+.magic {
+  background: linear-gradient(90deg, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+/* Subtitle */
+/* Subtitle */
+.subtitle {
+  font-size: 25px; /* bigger for desktop */
+  color: #636262;
+  margin: 20px 0 40px; /* Adjust this line */
+  /* Add a top margin to create the gap */
+  margin-top: 30px; 
+  position: relative;
+  top: -40px;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+ border-radius: 40px;
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #4c6ef5, #e0a7fc, #f8c3e3) border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  top: -40px;
+}
+
+/* Search icon */
+.search-icon {
+  margin-right: 10px;
+  color: #b312fc;
+  font-size: 20px;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: url("../assets/Search.png");
+  background-size: contain;
+  margin-right: 10px;
+}
+
+
+.search-container input {
+border: none;
+outline: none;
+font-size: 20px;
+flex: 1;
+align-items: center;
+text-align: center;
+}
+
+/* Button */
+.next-btn {
+  background: linear-gradient(90deg, #c471ed, #f64f59);
+  border: none;
+  padding: 14px 50px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  top: -20px;
+}
+
+.next-btn:hover {
+  opacity: 0.85;
+}
+
+/* Optional: Responsive tweaks for smaller screens */
+@media screen and (max-width: 1024px) {
+  .main-heading {
+    font-size: 48px;
+  }
+  .highlight, .magic {
+    font-size: 42px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .search-container {
+    max-width: 350px;
+  }
+  .next-btn {
+    font-size: 20px;
+    padding: 12px 40px;
+  }
+}

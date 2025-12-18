@@ -1,0 +1,108 @@
+.tripComparison-body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+.tripComparison-container {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.tripComparison-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a2458;
+  border: 2px solid #0a2458;
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* -------------------- TOP PILLS -------------------- */
+.tripComparison-top {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.tripComparison-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 25px;
+  border: 2px solid #000;
+  border-radius: 35px;
+  font-size: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+
+.pill-title {
+  font-weight: 700;
+}
+
+.pill-sub {
+  color: #777;
+}
+
+/* DROPDOWN */
+.dropdown-pill {
+  position: relative;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.pill-select {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pill-arrow {
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+}
+
+/* -------------------- TABLE -------------------- */
+.tripComparison-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tripComparison-heading-row th {
+  background-color: #7db8f0;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.tripComparison-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Blue section bar */
+.tripComparison-section-title td {
+  background: #7db8f0;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Destinations bold greenish text */
+.destination-text {
+  font-weight: 600;
+  color: #004b0a;
+}

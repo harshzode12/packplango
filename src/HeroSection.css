@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1583394838336-acd977736f90") no-repeat center center/cover;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ddd;
+}
+
+.hero-content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero-content span {
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 1.5px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: white;
+  color: black;
+}
+
+.side-images {
+  position: absolute;
+  right: 50px;
+  top: 25%;
+  display: flex;
+  gap: 20px;
+}
+
+.side-images img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.arrows {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.arrow-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

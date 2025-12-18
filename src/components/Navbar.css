@@ -1,0 +1,173 @@
+/* ========== NAVBAR ========== */
+.navbar {
+  font-family: Italiana;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+/* Logo left */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-logo img {
+  width: 150px;
+  margin-right: -50px;
+}
+
+/* Middle nav links */
+.navbar-links {
+  list-style: none;
+  font-size: 25px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin: 50px;
+  padding: 5px;
+  padding-right: 175px;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+/* Profile image (Top Right) */
+.navbar-profile {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  z-index: 9999;  /* way above everything */
+  opacity: 0.8;
+}
+
+.navbar-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-profile img:hover {
+  transform: scale(1.1);
+  border-color: rgb(130, 214, 247);
+}
+
+/* ========== FLOATING BUTTON ========== */
+.floating-button {
+  position: absolute;  
+  bottom: 50px;  
+  right: 50px;           
+  z-index: 50;
+}
+
+.floating-button img {
+  width: 250px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.6;
+}
+
+.floating-button img:hover {
+  opacity: 0.8;
+}
+
+/* Glassy image wrapper */
+.glassy-image {
+  position: relative;
+  display: inline-block;
+}
+
+/* Editor's Choice text */
+.button-text-editor {
+  position: absolute;
+  top: 53%;           
+  left: 42%;          
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255); 
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* A.I text */
+.button-text-ai {
+  position: absolute;
+  top: 53%;           
+  left: 75%;          
+  transform: translate(-50%, -50%);
+  color: rgb(130, 214, 247); 
+  font-size: 16px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: absolute;
+  top: 200px;
+  left:1120px;
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(3px);
+}
+
+/* Popup content box (smaller & centered) */
+.popup-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  width: 200px; /* 👈 smaller width */
+  min-height: 110px; /* 👈 smaller height */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: popupFadeIn 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Smooth popup animation */
+@keyframes popupFadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

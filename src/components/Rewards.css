@@ -1,0 +1,123 @@
+.Rewards-body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+.rewards-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.rewards-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a2458;
+  border: 2px solid #000;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.reward-card {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.reward-balance-section {
+  background: linear-gradient(to right, #c66cf0, #3d3bdc);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.reward-amount {
+  font-size: 36px;
+  margin: 0;
+}
+
+.reward-balance-text {
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.reward-bonus-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reward-icon {
+  font-size: 18px;
+  color: #7a3de2;
+}
+
+.reward-bonus-text {
+  flex: 1;
+  margin-left: 10px;
+  color: #000;
+}
+
+.reward-bonus-amount {
+  font-weight: 600;
+  color: #000;
+}
+
+.reward-table {
+  width: 650px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  background: linear-gradient(to right, #c66cf0, #3d3bdc);
+  color: white;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.amount {
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+}
+
+.note {
+  background: #fff5e6;
+  color: #ff9900;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.reward-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 10px;
+}
